@@ -3,15 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
     <title>HNG | task one</title>
   </head>
   <body>
-    <h1 data-testid="slackUserName">Hi! I am Ojukwu Chinonye</h1>
-    <img src="img.png" alt="the engine" data-testid="slackDisplayImage" />
-    <p data-testid="currentDayOfTheWeek">Monday</p>
-    <p data-testid="currentUTCTime">10000ms</p>
-    <p data-testid="myTrack">Frontend Track</p>
-    <a href="#" data-testid="githubURL">url -</a>
+    <main>
+      <div class="header">
+        <div class="header__intro">
+          <div class="header__img">
+            <img
+              src="img.png"
+              alt="the engine"
+              data-testid="slackDisplayImage"
+            />
+          </div>
+          <h1 data-testid="slackUserName">Ojukwu Chinonye</h1>
+          <p data-testid="myTrack">Frontend Track</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section__card">
+          <h2>Day of the week</h2>
+          <p data-testid="currentDayOfTheWeek" class="day">Monday</p>
+        </div>
+
+        <div class="section__card">
+          <h2>UTC Time</h2>
+          <p data-testid="currentUTCTime" class="utc">10000</p>
+        </div>
+
+        <div class="section__card">
+          <h2>Repository Link</h2>
+          <p>
+            url -<a
+              href="https://github.com/4002-nonye-practice/hng-task-one"
+              target="_blank"
+              data-testid="githubURL"
+            >
+              view repo</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
